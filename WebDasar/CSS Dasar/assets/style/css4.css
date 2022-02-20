@@ -1,0 +1,35 @@
+#div1 {
+  height: 200px;
+  width: 300px;
+  background-color: aqua;
+  overflow: auto;
+  margin-bottom: 4px;
+  padding: 8px;
+}
+
+#div2 {
+  height: 200px;
+  width: 300px;
+  background-color: aqua;
+  overflow: hidden;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  border: 8px dashed #31e70c;
+}
+
+#div3 {
+  height: 200px;
+  width: 300px;
+  background-color: aqua;
+  overflow: scroll;
+  margin-bottom: 4px;
+}
+
+#div4 {
+  background-color: #31e70c;
+  max-width: 750px;
+  text-align: center;
+  margin: auto;
+  overflow: auto;
+  border: 30px dashed #e78f0c;
+}

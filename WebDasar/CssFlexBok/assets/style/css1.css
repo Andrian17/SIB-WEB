@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  background-color: aqua;
+  padding: 20px;
+  border-radius: 20px;
+  width: 800px;
+  height: 500px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: bisque;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.satu {
+  flex-grow: 1;
+}
+
+.dua {
+  flex-grow: 2;
+}
+
+.tiga {
+  flex-grow: 3;
+}
+
+.container2 {
+  display: flex;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 20px;
+  width: 800px;
+  height: 500px;
+  border-radius: 4px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.col {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  background-color: aquamarine;
+  padding: 20px;
+  margin: 0 auto;
+  flex-direction: column;
+
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.row {
+  flex-grow: 1;
+  margin: 5px;
+  border: 2px solid black;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #fbdd1c;
+  border-radius: 10px;
+  display: flex;
+}
+
+.kotak {
+  flex-grow: 1;
+
+  /* properti lainnya */
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #fe899a;
+}

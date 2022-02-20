@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(255, 194, 194) !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(161, 236, 186);
+}
+
+h2 {
+  color: rgb(214, 39, 92);
+  font: italic, bolder, 32, arial;
+}
+
+footer {
+  color: white;
+}
+
+header > p {
+  color: rgb(218, 164, 48);
+  background-color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2::before,
+h2::after {
+  content: '"';
+  color: aliceblue !important;
+}
+
+p::first-letter {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(55, 21, 117);
+}

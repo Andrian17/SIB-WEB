@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+* {
+  font-family: "Quicksand", arial;
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+
+ul > li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #d040fc;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: antiquewhite;
+}
+
+.featured-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-img {
+  width: 200px;
+}
+
+aside {
+  text-align: center;
+}
+
+footer {
+  height: 100px;
+  background-color: rgb(16, 172, 219);
+  text-align: center;
+}
+
+footer > p {
+  padding: 40px;
+  color: antiquewhite;
+}
+
+.card {
+  box-shadow: 0 4px 8px #d040fc;
+  margin: 20px 0 20px 0;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.kepala {
+  padding: 5px;
+  font-size: 26px;
+  text-align: center;
+  background-color: #dc8cf5;
+  color: aliceblue;
+}
+
+main {
+  overflow: auto;
+  padding: 20px;
+}
+
+aside {
+  width: 25%;
+  float: right;
+  padding: 20px;
+}
+
+.content {
+  float: left;
+  width: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+  .content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+header {
+  display: inline;
+}

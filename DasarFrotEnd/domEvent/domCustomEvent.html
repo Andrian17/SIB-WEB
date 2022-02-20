@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body * {
+        margin: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        border-width: 2px;
+        width: 60%;
+      }
+      .buttons {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        border-width: 2px;
+        padding: 15px;
+      }
+      .button {
+        margin: 8px;
+        height: 40px;
+      }
+    </style>
+    <title>Dom Custom Event</title>
+  </head>
+  <body>
+    <div class="buttons" align="center">
+      <h3 id="caption">Silakan tekan salah satu tombol di bawah...</h3>
+      <button class="button" id="tombol">Tombol Custom Event</button>
+    </div>
+
+    <!--  -->
+    <div onclick="alert('ELEMEN LANGIT')" align="center">
+      LANGIT
+      <div onclick="alert('ELEMEN LUAR')" align="center">
+        LUAR
+        <div onclick="alert('ELEMEN TENGAH')" align="center">
+          TENGAH
+          <div onclick="alert('ELEMEN DALAM')" align="center">DALAM</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const changeCaption = new Event("changeCaption");
+      window.addEventListener("load", () => {
+        const tombol = document.getElementById("tombol");
+        tombol.addEventListener("changeCaption", customEventHandler);
+        tombol.addEventListener("click", () => {
+          tombol.dispatchEvent(changeCaption);
+        });
+      });
+      function customEventHandler(e) {
+        console.log(`Event ${e.type} telah dijalankan`);
+        const caption = document.getElementById("caption");
+        caption.innerText = "Anda telah membangkitkan Custom Event";
+      }
+    </script>
+  </body>
+</html>

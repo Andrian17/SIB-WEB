@@ -1,0 +1,55 @@
+div {
+  width: 180px;
+  height: 220px;
+}
+
+.satu {
+  background-color: aqua;
+  position: absolute;
+}
+
+.dua {
+  background-color: rgb(75, 75, 240);
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.tiga {
+  background-color: rgb(197, 212, 59);
+}
+
+.satu:hover {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+}
+
+p {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  background-color: aquamarine;
+  padding: 30px;
+  position: absolute;
+  width: 300px;
+}
+
+.relative {
+  position: relative;
+  left: 50px;
+}
+
+nav {
+  width: 100%;
+  padding: 30px;
+  background-color: aqua;
+  margin-bottom: 10px;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}

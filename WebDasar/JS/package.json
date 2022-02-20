@@ -1,0 +1,11 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Script1.js",
+  "scripts": {
+    "start": "node Script1.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

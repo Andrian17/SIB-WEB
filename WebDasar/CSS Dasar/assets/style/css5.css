@@ -1,0 +1,26 @@
+ul > li {
+  display: inline;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+ul > li:hover {
+  font-weight: bolder;
+  background-color: rgb(233, 48, 250);
+  box-sizing: border-box;
+  box-shadow: 3px 4px 20px #c921c3;
+}
+
+.kotak {
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  background-color: #c921c3;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px #3826db;
+}
+
+.kotak:hover {
+  background-color: #e71f1f;
+  box-shadow: 6px 8px 30px #e93434;
+}

@@ -1,0 +1,111 @@
+.flex-kontainer-column {
+  max-width: 800px;
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: rgb(233, 233, 188);
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-kontainer-row {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.display {
+  /* display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: rgb(39, 39, 34);
+  border: 1px solid black; */
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #333333;
+  border: 1px solid black;
+  font-size: 2em;
+  text-align: end;
+}
+
+.button {
+  font-size: large;
+  padding: 30px;
+  border: 1px solid black;
+  flex-grow: 1;
+  flex-basis: 25%;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+  text-align: center;
+}
+
+.button:hover {
+  font-weight: 900;
+}
+
+.dobel {
+  flex-basis: 50%;
+}
+
+.dobel,
+.operator,
+.negative {
+  background: rgb(243, 180, 44);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
+  .flex-kontainer-column {
+    width: 320px;
+  }
+}
+
+.history {
+  border: 1px solid black;
+  text-align: center;
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+}
+
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+  background-color: rgb(243, 117, 50);
+  color: aliceblue;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
+  .history {
+    width: 100%;
+  }
+}

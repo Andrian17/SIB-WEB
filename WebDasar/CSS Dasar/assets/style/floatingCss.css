@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.kotak {
+  width: 240px;
+  height: 280px;
+  background-color: aqua;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 20px;
+}
+
+.kotak {
+  float: left;
+}
+
+.kiri {
+  width: 50%;
+  background-color: aqua;
+  float: left;
+  height: 600px;
+  margin-right: 10px;
+}
+
+.kanan {
+  background-color: blue;
+  height: 600px;
+}
+
+.container {
+  width: 100%;
+}
+
+.container2 {
+  width: 800px;
+  border: 4px solid rgb(34, 17, 34);
+  overflow: auto;
+}
+
+img {
+  float: left;
+  margin: 10px;
+}

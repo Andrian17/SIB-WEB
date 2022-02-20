@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+#p1 {
+  text-decoration: underline;
+  text-align: justify;
+}
+
+#p2 {
+  text-decoration: none;
+  text-align: right;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 4px;
+  text-shadow: 1px 2px 0 #2352b8e2;
+  background-color: aquamarine;
+}
+
+#sejarah {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 8px;
+  text-shadow: 1px, 2px 0 #240c0a;
+  background-color: bisque;
+}
+
+p {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-shadow: 4px, 4px 3px #e21806;
+  background-color: rgb(67, 180, 224);
+  line-height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  /* font-size: 32px; */
+  background-color: #cb58e8;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+aside {
+  text-align: center;
+}
+
+footer {
+  background-color: #b10ac7 !important;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  background-color: inherit;
+  opacity: 20%;
+}
