@@ -1,0 +1,20 @@
+[
+  {
+    "nama": "Dosen1",
+    "nim": 1901050024,
+    "prodi": "D3 Sistem Informasi",
+    "id": 1
+  },
+  {
+    "nama": "Dosen2",
+    "nim": 1901050019,
+    "prodi": "S1 Ilkom",
+    "id": 2
+  },
+  {
+    "nama": "Dosen3",
+    "nim": 1901050017,
+    "prodi": "S1 Bisnis Management",
+    "id": 3
+  }
+]
