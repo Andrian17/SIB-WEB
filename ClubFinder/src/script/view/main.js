@@ -1,9 +1,20 @@
 import DataSource from "../data/data-source.js";
 
+import "../components/clubList.js";
+
+//import file search-bar.js from "../../../../../../
+import "../components/searcBar.js";
+
 const main = () => {
-  const searchElement = document.querySelector("#searchElement");
-  const buttonSearchElement = document.querySelector("#searchButtonElement");
-  const clubListElement = document.querySelector("#clubList");
+  //const searchElement = document.querySelector("#searchElement");
+
+  //mengambil custom elemen tag search-bar
+  const searchElement = document.querySelector("search-bar");
+
+  //event dimatikan karena akan dijalankan di file search-bar.js
+  //const buttonSearchElement = document.querySelector("#searchButtonElement");
+
+  const clubListElement = document.querySelector("club-list");
 
   //Promise biasa
   // const onButtonSearchClicked = () => {
@@ -24,29 +35,32 @@ const main = () => {
 
   const renderResult = (results) => {
     clubListElement.innerHTML = "";
-    results.forEach((club) => {
-      // const name = club.name;
-      // const fanArt = club.fanArt;
-      // const description = club.description;
-      const { name, fanArt, description } = club;
 
-      const clubElement = document.createElement("div");
-      clubElement.setAttribute("class", "club");
+    clubListElement.clubList = results;
 
-      clubElement.innerHTML =
-        '<img class="fan-art-club" src="' +
-        fanArt +
-        '" alt="Fan Art">\n' +
-        '<div class="club-info">\n' +
-        "<h2>" +
-        name +
-        "</h2>\n" +
-        "<p>" +
-        description +
-        "</p>" +
-        "</div>";
-      clubListElement.appendChild(clubElement);
-    });
+    // results.forEach((club) => {
+    //   // const name = club.name;
+    //   // const fanArt = club.fanArt;
+    //   // const description = club.description;
+    //   const { name, fanArt, description } = club;
+
+    //   const clubElement = document.createElement("div");
+    //   clubElement.setAttribute("class", "club");
+
+    //   clubElement.innerHTML =
+    //     '<img class="fan-art-club" src="' +
+    //     fanArt +
+    //     '" alt="Fan Art">\n' +
+    //     '<div class="club-info">\n' +
+    //     "<h2>" +
+    //     name +
+    //     "</h2>\n" +
+    //     "<p>" +
+    //     description +
+    //     "</p>" +
+    //     "</div>";
+    //   clubListElement.appendChild(clubElement);
+    // });
   };
 
   const fallbackResult = (message) => {
@@ -54,7 +68,11 @@ const main = () => {
     clubListElement.innerHTML += '<h2 class="placeholder">' + message + "</h2>";
   };
 
-  buttonSearchElement.addEventListener("click", onButtonSearchClicked);
+  //event akan dipanggil pada file searchBar.js
+  //buttonSearchElement.addEventListener("click", onButtonSearchClicked);
+
+  //memanggil funngsi clickEvent pada file searchBar.js
+  searchElement.clickEvent = onButtonSearchClicked;
 };
 
 export default main;
