@@ -1,5 +1,4 @@
 import clubs from "./clubs.js";
-console.log(clubs.length);
 
 class DataSource {
   static searchClub(keyword) {

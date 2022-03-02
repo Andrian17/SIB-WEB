@@ -1,6 +1,7 @@
 class ClubItems extends HTMLElement {
   set renderClubItems(objClub) {
     this._renderClubItems = objClub;
+    //console.log(this._renderClubItems);
     this.render();
   }
 

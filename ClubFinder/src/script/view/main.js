@@ -26,7 +26,9 @@ const main = () => {
   //Asynch Await
   const onButtonSearchClicked = async () => {
     try {
-      const result = await DataSource.searchClub(searchElement.value);
+      //memanggil fungsi get valueBtn pada file search-bar.js
+      const result = await DataSource.searchClub(searchElement.valueBtn);
+      console.log(result);
       renderResult(result);
     } catch (error) {
       fallbackResult(error);
@@ -63,9 +65,9 @@ const main = () => {
     // });
   };
 
-  const fallbackResult = (message) => {
+  const fallbackResult = (error) => {
     clubListElement.innerHTML = "";
-    clubListElement.innerHTML += '<h2 class="placeholder">' + message + "</h2>";
+    clubListElement.renderError = error;
   };
 
   //event akan dipanggil pada file searchBar.js
