@@ -1,37 +1,139 @@
 function main() {
+  const baseUrl = "https://books-api.dicoding.dev";
+  /*
+    Async Await
+    const getBook = async () => {
+      try {
+        const response = await fetch(`${baseUrl}/list`);
+        const responseJson = await response.json();
+        if(responseJson.error) {
+           showResponseMessage(responseJson.message);
+        } else {
+           renderAllBooks(responseJson.books);
+        }
+      } catch(error) {
+         showResponseMessage(error);
+      }
+    }
 
-    const getBook = () => {
-        // tuliskan kode di sini!
+    const insertBook = async (book) => {
+        try{
+            const options = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-Auth-Token": "12345"
+                },
+                body: JSON.stringify(book)
+            }
+    
+            const response = await fetch(`${baseUrl}/add`, options)
+            const responseJson = await response.json();
+            showResponseMessage(responseJson.message);
+            getBook();
+        } catch(error) {
+            showResponseMessage(error)
+        }
+    }
+
+    const updateBook = async (book) => {
+        try {
+            const options = {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-Auth-Token": "12345"
+                },
+                body: JSON.stringify(book)
+            }
+            const response = await fetch(`${baseUrl}/edit/${book.id}`, options);
+            const responseJson = await response.json();
+            showResponseMessage(responseJson.message);
+            getBook();
+        } catch(error) {
+            showResponseMessage(error);
+        }
     };
 
+*/
+  const getBook = () => {
+    fetch(`${baseUrl}/list`)
+      .then((data) => data.json())
+      .then((data) => {
+        if (data.error) {
+          showResponseMessage(data.message);
+        } else {
+          renderAllBooks(data.books);
+        }
+      })
+      .catch((e) => showResponseMessage(e));
+  };
 
-    const insertBook = (book) => {
-        // tuliskan kode di sini!
-    };
+  const insertBook = (book) => {
+    fetch(`${baseUrl}/add`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Auth-Token": "12345",
+      },
+      body: JSON.stringify(book),
+    })
+      .then((data) => {
+        return data.json();
+      })
+      .then((res) => {
+        showResponseMessage(res.message);
+        getBook();
+      })
+      .catch((er) => showResponseMessage(er));
+  };
 
-    const updateBook = (book) => {
-        // tuliskan kode di sini!
-    };
+  const updateBook = (book) => {
+    fetch(`${baseUrl}/edit/${book.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Auth-Token": "12345",
+      },
+      body: JSON.stringify(book),
+    })
+      .then((e) => e.json())
+      .then((e) => {
+        showResponseMessage(e.message);
+        getBook();
+      })
+      .catch((e) => showResponseMessage(e));
+  };
 
-    const removeBook = (bookId) => {
-        // tuliskan kode di sini!
-    };
+  const removeBook = (bookId) => {
+    fetch(`${baseUrl}/delete/${bookId}`, {
+      method: "DELETE",
+      headers: {
+        "X-AUTH-Token": "12345",
+      },
+    })
+      .then((data) => {
+        return data.json();
+      })
+      .then((res) => {
+        showResponseMessage(res.message);
+        getBook();
+      })
+      .catch((e) => {
+        showResponseMessage(e);
+      });
+  };
 
-
-
-
-
-
-    /*
+  /*
         jangan ubah kode di bawah ini ya!
     */
 
-    const renderAllBooks = (books) => {
-        const listBookElement = document.querySelector("#listBook");
-        listBookElement.innerHTML = "";
+  const renderAllBooks = (books) => {
+    const listBookElement = document.querySelector("#listBook");
+    listBookElement.innerHTML = "";
 
-        books.forEach(book => {
-            listBookElement.innerHTML += `
+    books.forEach((book) => {
+      listBookElement.innerHTML += `
                 <div class="col-lg-4 col-md-6 col-sm-12" style="margin-top: 12px;">
                     <div class="card">
                         <div class="card-body">
@@ -42,49 +144,48 @@ function main() {
                     </div>
                 </div>
             `;
-        });
-
-        const buttons = document.querySelectorAll(".button-delete");
-        buttons.forEach(button => {
-            button.addEventListener("click", event => {
-                const bookId = event.target.id;
-                removeBook(bookId);
-            })
-        })
-    };
-
-    const showResponseMessage = (message = "Check your internet connection") => {
-        alert(message);
-    };
-
-    document.addEventListener("DOMContentLoaded", () => {
-
-        const inputBookId = document.querySelector("#inputBookId");
-        const inputBookTitle = document.querySelector("#inputBookTitle");
-        const inputBookAuthor = document.querySelector("#inputBookAuthor");
-        const buttonSave = document.querySelector("#buttonSave");
-        const buttonUpdate = document.querySelector("#buttonUpdate");
-
-        buttonSave.addEventListener("click", function () {
-            const book = {
-                id: Number.parseInt(inputBookId.value),
-                title: inputBookTitle.value,
-                author: inputBookAuthor.value
-            };
-            insertBook(book)
-        });
-
-        buttonUpdate.addEventListener("click", function () {
-            const book = {
-                id: Number.parseInt(inputBookId.value),
-                title: inputBookTitle.value,
-                author: inputBookAuthor.value
-            };
-
-            updateBook(book)
-        });
-        getBook();
     });
+
+    const buttons = document.querySelectorAll(".button-delete");
+    buttons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        const bookId = event.target.id;
+        removeBook(bookId);
+      });
+    });
+  };
+
+  const showResponseMessage = (message = "Check your internet connection") => {
+    alert(message);
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const inputBookId = document.querySelector("#inputBookId");
+    const inputBookTitle = document.querySelector("#inputBookTitle");
+    const inputBookAuthor = document.querySelector("#inputBookAuthor");
+    const buttonSave = document.querySelector("#buttonSave");
+    const buttonUpdate = document.querySelector("#buttonUpdate");
+
+    buttonSave.addEventListener("click", function () {
+      const book = {
+        id: Number.parseInt(inputBookId.value),
+        title: inputBookTitle.value,
+        author: inputBookAuthor.value,
+      };
+      insertBook(book);
+    });
+
+    buttonUpdate.addEventListener("click", function () {
+      const book = {
+        id: Number.parseInt(inputBookId.value),
+        title: inputBookTitle.value,
+        author: inputBookAuthor.value,
+      };
+
+      updateBook(book);
+    });
+    getBook();
+  });
 }
 
 export default main;

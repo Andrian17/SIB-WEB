@@ -52,6 +52,7 @@ class ClubList extends HTMLElement {
       max-height: 300px;
       object-fit: cover;
       object-position: center;
+      background-size: cover;
     }
     
     .club-info {
