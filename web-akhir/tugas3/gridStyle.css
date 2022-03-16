@@ -1,0 +1,57 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper div {
+  border: 1px dashed black;
+  padding: 16px;
+}
+
+.wrapper {
+  padding: 8px;
+  border: 1px dashed black;
+}
+
+/* coloring */
+.satu,
+.empat {
+  background-color: mediumseagreen;
+}
+
+.dua,
+.enam {
+  background-color: steelblue;
+}
+
+.tiga,
+.lima {
+  background-color: gold;
+}
+
+/* Grid Lines */
+.satu {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.dua {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.tiga {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.lima {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.enam {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}

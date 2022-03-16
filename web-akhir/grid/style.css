@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* row-gap: 15px;
+  column-gap: 10px; */
+
+  gap: 16px 10px; /* baris kolom */
+}
+
+.container div {
+  border: 1px dashed black;
+  padding: 16px;
+}
+
+/* Warna */
+
+.box1,
+.box2 {
+  background-color: rgb(76, 76, 238);
+}
+
+.box3,
+.box4 {
+  background-color: rgb(214, 212, 55);
+}
+
+.box5,
+.box6,
+.box7 {
+  background-color: rgb(158, 38, 25);
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.box2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.box4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.box3 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.box5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
