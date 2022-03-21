@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dicoding's Blog</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/assets/favicon-48x48.png"
+    />
+    <link rel="manifest" href="/assets/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="application-name" content="dicoding-blog" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="/assets/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="/assets/apple-touch-icon-1024x1024.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="dicoding-blog" />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-640x1136.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-750x1334.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-828x1792.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-1125x2436.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-1242x2208.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-1242x2688.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-1536x2048.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-1668x2224.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-1668x2388.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-2048x2732.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/apple-touch-startup-image-1620x2160.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-1136x640.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-1334x750.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-1792x828.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-2436x1125.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-2208x1242.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-2688x1242.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-2048x1536.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-2224x1668.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-2388x1668.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-2732x2048.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/apple-touch-startup-image-2160x1620.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="228x228"
+      href="/assets/coast-228x228.png"
+    />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
+    <meta name="msapplication-config" content="/assets/browserconfig.xml" />
+    <link
+      rel="yandex-tableau-widget"
+      href="/assets/yandex-browser-manifest.json"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__title">Dicoding's Blog</h1>
+      </div>
+      <a id="menu" class="header__menu">☰</a>
+    </header>
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Articles</a></li>
+        <li class="nav__item"><a href="#">Tutorials</a></li>
+        <li class="nav__item"><a href="#">Information</a></li>
+        <li class="nav__item"><a href="#">Stories</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">
+          Bangun Karirmu Sebagai Developer Profesional
+        </h1>
+        <p class="hero__tagline">
+          Jadilah tuan rumah di negeri sendiri dengan belajar langsung dari para
+          inovator dan developer expert
+        </p>
+      </div>
+    </div>
+    <main>
+      <section class="content">
+        <article class="headline">
+          <figure class="headline__figure">
+            <img src="images/headline.png" alt="Dicoding Fact Sheet" />
+            <figcaption>
+              Dicoding February 2020 Infographic, 235k Members
+            </figcaption>
+          </figure>
+          <div class="headline__content">
+            <h1 class="headline__title">#ceritadicoding : Story of Dicoding</h1>
+            <p class="headline__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+              eum facere nostrum officiis qui quidem ratione similique, soluta
+              veniam voluptatum. Accusantium ad amet asperiores, aut commodi
+              corporis dicta distinctio ducimus expedita itaque laudantium
+              magnam maiores, nobis obcaecati officiis provident quasi qui quos
+              repellat rerum saepe sint soluta veniam vero vitae, voluptas
+              voluptate voluptatem. Esse nobis non nulla optio vero. Laudantium!
+            </p>
+            <button class="headline__button">Read More</button>
+          </div>
+        </article>
+        <div class="latest">
+          <h1 class="latest__label">Latest Post</h1>
+          <div class="posts">
+            <article class="post-item">
+              <img
+                class="post-item__thumbnail"
+                src="images/post-1.png"
+                alt="Gambar dua orang wanita sedang memegang laptop"
+              />
+              <div class="post-item__content">
+                <p class="post-item__date">
+                  About 10 Hours Ago By
+                  <a href="#" class="post-item__date__author"
+                    >Dicoding Intern</a
+                  >
+                </p>
+                <h1 class="post-item__title">
+                  <a href="#">Kenapa Harus Belajar Coding Dari Sekarang?</a>
+                </h1>
+                <p class="post-item__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur atque autem culpa laborum odio similique voluptas.
+                  A ab animi ducimus earum explicabo hic molestias repudiandae
+                  sunt. Consectetur consequuntur dolorum excepturi, fugit, minus
+                  nemo non quae quaerat quod recusandae reprehenderit totam,
+                  unde. Aliquid autem doloremque impedit quod tempora tenetur
+                  totam vero.
+                </p>
+              </div>
+            </article>
+            <article class="post-item">
+              <img
+                class="post-item__thumbnail"
+                src="images/post-2.jpg"
+                alt="Github logo"
+              />
+              <div class="post-item__content">
+                <p class="post-item__date">
+                  About 10 Hours Ago By
+                  <a href="#" class="post-item__date__author"
+                    >Alfian Y Abdullah</a
+                  >
+                </p>
+                <h1 class="post-item__title">
+                  <a href="#">Apa itu Rate Limit pada Github API?</a>
+                </h1>
+                <p class="post-item__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur atque autem culpa laborum odio similique voluptas.
+                  A ab animi ducimus earum explicabo hic molestias repudiandae
+                  sunt. Consectetur consequuntur dolorum excepturi, fugit, minus
+                  nemo non quae quaerat quod recusandae reprehenderit totam,
+                  unde. Aliquid autem doloremque impedit quod tempora tenetur
+                  totam vero.
+                </p>
+              </div>
+            </article>
+            <article class="post-item">
+              <img
+                class="post-item__thumbnail"
+                src="images/post-3.jpg"
+                alt="Seorang lelaki sendang memakai filter instagram"
+              />
+              <div class="post-item__content">
+                <p class="post-item__date">
+                  About 10 Hours Ago By
+                  <a href="#" class="post-item__date__author"
+                    >Aditya Tri Nugroho</a
+                  >
+                </p>
+                <h1 class="post-item__title">
+                  <a href="#"
+                    >2 Langkah Utama Membuat Filter Kece di Instagram</a
+                  >
+                </h1>
+                <p class="post-item__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur atque autem culpa laborum odio similique voluptas.
+                  A ab animi ducimus earum explicabo hic molestias repudiandae
+                  sunt. Consectetur consequuntur dolorum excepturi, fugit, minus
+                  nemo non quae quaerat quod recusandae reprehenderit totam,
+                  unde. Aliquid autem doloremque impedit quod tempora tenetur
+                  totam vero.
+                </p>
+              </div>
+            </article>
+            <article class="post-item">
+              <img
+                class="post-item__thumbnail"
+                src="images/post-4.jpg"
+                alt="Seorang lelaki dengan ekspresi bingung"
+              />
+              <div class="post-item__content">
+                <p class="post-item__date">
+                  About 10 Hours Ago By
+                  <a href="#" class="post-item__date__author"
+                    >Dimas Catur Wibowo</a
+                  >
+                </p>
+                <h1 class="post-item__title">
+                  <a href="#"
+                    >Kenapa Anak Sosial Hijrah Belajar Kotlin Android?</a
+                  >
+                </h1>
+                <p class="post-item__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur atque autem culpa laborum odio similique voluptas.
+                  A ab animi ducimus earum explicabo hic molestias repudiandae
+                  sunt. Consectetur consequuntur dolorum excepturi, fugit, minus
+                  nemo non quae quaerat quod recusandae reprehenderit totam,
+                  unde. Aliquid autem doloremque impedit quod tempora tenetur
+                  totam vero.
+                </p>
+              </div>
+            </article>
+            <article class="post-item">
+              <img
+                class="post-item__thumbnail"
+                src="images/post-5.png"
+                alt="Seorang lelaki memakai baju abu-abu"
+              />
+              <div class="post-item__content">
+                <p class="post-item__date">
+                  About 10 Hours Ago By
+                  <a href="#" class="post-item__date__author"
+                    >Mutiara Arumsari</a
+                  >
+                </p>
+                <h1 class="post-item__title">
+                  <a href="#">Programmer Atau Pro Gamer, Kamu Team Mana?</a>
+                </h1>
+                <p class="post-item__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur atque autem culpa laborum odio similique voluptas.
+                  A ab animi ducimus earum explicabo hic molestias repudiandae
+                  sunt. Consectetur consequuntur dolorum excepturi, fugit, minus
+                  nemo non quae quaerat quod recusandae reprehenderit totam,
+                  unde. Aliquid autem doloremque impedit quod tempora tenetur
+                  totam vero.
+                </p>
+              </div>
+            </article>
+            <article class="post-item">
+              <img
+                class="post-item__thumbnail"
+                src="images/post-6.png"
+                alt="Seorang wanita di depan komputer sedang pusing"
+              />
+              <div class="post-item__content">
+                <p class="post-item__date">
+                  About 10 Hours Ago By
+                  <a href="#" class="post-item__date__author"
+                    >Mutiara Arumsari</a
+                  >
+                </p>
+                <h1 class="post-item__title">
+                  <a href="#">Algoritma Dulu Ngoding Kemudian</a>
+                </h1>
+                <p class="post-item__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur atque autem culpa laborum odio similique voluptas.
+                  A ab animi ducimus earum explicabo hic molestias repudiandae
+                  sunt. Consectetur consequuntur dolorum excepturi, fugit, minus
+                  nemo non quae quaerat quod recusandae reprehenderit totam,
+                  unde. Aliquid autem doloremque impedit quod tempora tenetur
+                  totam vero.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

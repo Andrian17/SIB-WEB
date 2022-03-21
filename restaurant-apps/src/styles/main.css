@@ -1,3 +1,227 @@
-img {
-    display: block;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 211, 220);
+}
+
+header > div > h1 {
+  font-size: large;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: rgb(131, 51, 98);
+  color: rgb(243, 230, 214);
+}
+
+#app-name {
+  font-size: large;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  list-style: none;
+  /* display: none; */
+}
+
+nav > ul > li {
+  text-align: right;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(240, 252, 247);
+  font-weight: 600;
+  display: flex;
+  height: 44px;
+  min-width: 44px;
+  align-items: center;
+}
+
+#menu-canvas {
+  position: relative;
+  display: none;
+  min-width: 44px;
+  min-height: 44px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #000000;
+}
+
+#menu-canvas > .open {
+  transform: rotate(45deg);
+}
+
+/* 2 */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 650px;
+  width: 100%;
+  text-align: center;
+  background-position: center;
+  background-color: rgb(48, 63, 48);
+  background-image: url("../public/images/heros/hero-image_4.jpg");
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+}
+
+.capt-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.cap1 {
+  font-size: 38px;
+  font-weight: 600;
+  color: aliceblue;
+  display: inline-block;
+}
+
+.cap2 {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 100;
+  color: aliceblue;
+  display: block;
+  text-transform: capitalize;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main > h1 {
+  padding-top: 18px;
+  text-align: center;
+}
+
+.top-ratings {
+  min-width: 90px;
+  height: 50px;
+  font-size: larger;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid rgb(151, 99, 99);
+  font-weight: 800;
+  cursor: pointer;
+  padding: 8px;
+  background-color: antiquewhite;
+  margin-left: 10px;
+}
+.top-ratings:hover {
+  background-color: rgb(145, 84, 84);
+}
+
+section {
+  width: 100%;
+  margin: 10px auto;
+}
+
+list-restaurant {
+  display: grid;
+  gap: 10px;
+  margin: 32px auto auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(173, 68, 91, 0.842);
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: rgb(116, 82, 112);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 2px auto;
+  z-index: 10;
+}
+
+.card > .head-card {
+  padding: 10px;
+  color: rgb(250, 100, 12);
+  text-align: left;
+  position: absolute;
+  border: 1px solid rebeccapurple;
+  border-radius: 7px;
+  background-color: #f0525223;
+  min-width: 180px;
+  margin-top: 10px;
+}
+
+.head-card > h4 {
+  padding-top: 7px;
+  font-size: large;
+}
+
+article > img {
+  width: 100%;
+}
+
+.card > .footer-card {
+  color: blanchedalmond;
+  padding: 20px;
+  text-align: justify;
+}
+
+.description {
+  font-size: large;
+}
+
+.rating {
+  text-align: center;
+  padding-top: 8px;
+}
+
+/* skip Kontent */
+.skip-link {
+  position: absolute;
+  top: -400px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  letter-spacing: 1px;
+  display: flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+}
+
+.skip-link:focus {
+  top: 0;
+  font-weight: 800px;
+}
+
+/* footer */
+footer {
+  background-color: #2c3e50;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
 }
