@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["standard"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "semi": "off",
+    "no-unused-vars": "off",
+    "comma-dangle": "off",
+    "no-trailing-spaces": "off",
+    "no-multiple-empty-lines": "off",
+    "arrow-spacing": "off",
+    "indent": "off",
+    "space-before-blocks": "off",
+    "no-empty": "off",
+    "no-undef": "off",
+    "quotes": "off",
+    "padded-blocks": "off",
+    "object-property-newline": "off",
+    "eqeqeq": "off"
+  }
+}

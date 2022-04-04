@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "belajar js Lanjutan dicoding",
   "main": "index.js",
+  "type": "module",
   "scripts": {},
   "author": "Andrian",
   "license": "ISC"
