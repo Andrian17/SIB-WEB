@@ -1,4 +1,4 @@
-const bookshelf = require('./books.js');
+const bookshelf = require('./books');
 const { nanoid } = require('nanoid');
 let tempBooks = [];
 
